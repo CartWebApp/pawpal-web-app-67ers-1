@@ -1,9 +1,17 @@
 nav {
+    width: 1440px;
+    height: 162px;
+    flex-shrink: 0;
+    background-color: rgb(133, 192, 253);
+}
 
+a {
+    text-decoration: none;
 }
 
 
 #HomeButton img {
-    width: 30px;
-    height: 30px;
-}   
+    width: 67px;
+    height: 64px;
+}
+
