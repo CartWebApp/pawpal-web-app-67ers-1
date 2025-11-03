@@ -48,7 +48,13 @@ input[type="email"], input[type="password"] {
     box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 }
 
-.tohome {
+p:first-of-type {
+    text-align: center;
+}
+p:nth-of-type(2) {
+    text-align: center;
+}
+.tohome a {
   position: absolute;
   right: 40px;
   bottom: -36px;                
@@ -64,18 +70,4 @@ input[type="email"], input[type="password"] {
   font-size: 26px;
   box-shadow: 0 12px 28px rgba(0,0,0,0.22);
   cursor: pointer;
-}
-
-@media (max-width: 720px) {
-  form { 
-    padding: 60px 24px 120px; border-radius: 22px; 
-}
-
-  input[type="email"], input[type="password"] { 
-    max-width: 90%; 
-}
-
-  input[type="submit"] { 
-    right: 20px; bottom: -30px; height: 64px; font-size: 22px; 
-}
 }
