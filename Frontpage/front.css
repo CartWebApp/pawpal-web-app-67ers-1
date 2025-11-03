@@ -93,7 +93,7 @@ header {
     border-bottom-right-radius: 8px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 720px) {
   body {
         flex-direction: column;
   }

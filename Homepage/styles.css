@@ -50,7 +50,7 @@ nav ul {
     height: 110px;
 }
 
-#Manage-Pets, #Calendar, #Settings {
+#Manage-Pets, #Calendar {
     display: flex;
     width: 210px;
     height: 50px;
