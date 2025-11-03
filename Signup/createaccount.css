@@ -29,17 +29,19 @@ form input[type="email"], form input[name="username"], form input[type="password
     text-align: center;
 }
 
-p {
+a {
     position: absolute;
     bottom: -25px;
     right: 40px;
     background: white;
+    color: black;
     border: none;
     padding: 18px 35px;
     border-radius: 20px;
     font-size: 20px;
     cursor: pointer;
     text-decoration: none;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.22);
 }
 
 @media (max-width: 720px) {
