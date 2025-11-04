@@ -18,6 +18,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+
 }
 
 
@@ -100,14 +101,74 @@ nav ul{
     border: solid 1px black;
 }
 
+section {
+    background-color: #2da3f7;
+    width: 800px;
+    height: 800px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    margin: 40px auto;
+}
+
+section p {
+    background-color: white;
+    color: rgb(10, 10, 10);
+    width: 150px;
+    text-align: center;
+    padding: 6px;
+    border-radius: 20px;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+section a img {
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 6px;
+}
+
+#addpetimages {
+    background-color: white;
+    width: 300px;
+    height: 300px;
 
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    text-decoration: none;
 
+    margin-top: 30px;
+    margin-bottom: -40px;
+}
 
+#addpet {
+    background-color: white;
+    padding: 6px 14px;
+    border-radius: 15px;
+    text-decoration: none;
+    margin-top: 80px;
+    margin-left: auto;
+    
+}
 
+#male {
+    margin-right: 50px;
+    margin-bottom: -59px;
+}
 
-
-
+#female {
+    margin-left: 50px;
+}
 
 footer {
     background-color: #85C0FD;
