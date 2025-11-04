@@ -4,9 +4,20 @@
     font-family: "Poppins", sans-serif;
 }
 
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    
+}
 
 
-/* nav */
+
+
 
 
 
@@ -91,19 +102,21 @@ nav ul{
 
 
 
-/* Add Pet */
+
 
 .addpal {
-    width: 378px;
-    height: 405px;
-    flex-shrink: 0;
+    position: fixed;
+    top: 30%;
+    left: 40%;
+    
+
+
+
     background-color: #6DB5FF;
-
-
     display: flex;
     align-items: center;
-    justify-self: center;
-    
+    justify-content: center;
+    padding: 1rem;
 }
 
 #addpal {
@@ -112,18 +125,59 @@ nav ul{
     background-color: #85C0FD;
     border-radius: 130px;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    position: relative; /* establish containing block for pseudo */
 }
 
+#addpal::before {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* responsive sizing: scales with viewport but stays within reasonable bounds */
+    font-size: clamp(80px, 18vw, 180px);
+    color: #ffffff;
+    opacity: 0.18;
+    font-weight: 800;
+    line-height: 1;
+    pointer-events: none; /* allow clicks through decorative element */
+    z-index: 0;
+}
+
+/* ensure the paragraph content sits above the decorative plus */
 #addpal p {
-
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: #000; /* ensure readable on the card */
+}
+#plus-sign1 {
+    width: 100px;
+    justify-self: center;
+    align-self: center;
 }
 
+#plus-sign2 {
+    height: 100px;
+    width: 10px;
+}
 
-
+#plus-sign1, #plus-sign2 {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
 
 footer {
     background-color: #85C0FD;
     height: 162px;
-    margin-top: 171px;
+    margin-top: auto;
+    width: 100%;
 }
+
