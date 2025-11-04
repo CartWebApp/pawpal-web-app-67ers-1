@@ -128,35 +128,9 @@ nav ul{
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    position: relative; /* establish containing block for pseudo */
+    text-align: center; 
 }
 
-#addpal::before {
-    content: "+";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* responsive sizing: scales with viewport but stays within reasonable bounds */
-    font-size: clamp(80px, 18vw, 180px);
-    color: #ffffff;
-    opacity: 0.18;
-    font-weight: 800;
-    line-height: 1;
-    pointer-events: none; /* allow clicks through decorative element */
-    z-index: 0;
-}
-
-/* ensure the paragraph content sits above the decorative plus */
-#addpal p {
-    position: relative;
-    z-index: 1;
-    margin: 0;
-    font-size: 24px;
-    font-weight: 600;
-    color: #000; /* ensure readable on the card */
-}
 #plus-sign1 {
     width: 100px;
     justify-self: center;
@@ -180,4 +154,3 @@ footer {
     margin-top: auto;
     width: 100%;
 }
-

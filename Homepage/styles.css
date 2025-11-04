@@ -16,7 +16,7 @@ body {
 
 
 
-/* nav */
+
 
 
 
@@ -101,7 +101,6 @@ nav ul{
 
 
 
-/* Pets */
 
 .Pets {
     display: flex;
@@ -175,6 +174,6 @@ nav ul{
 footer {
     background-color: #85C0FD;
     height: 162px;
-    margin-top: auto; /* push footer to bottom when page content is short */
+    margin-top: auto;
     width: 100%;
 }
