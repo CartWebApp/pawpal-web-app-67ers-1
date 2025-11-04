@@ -12,10 +12,12 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    
 }
 
-
+main {
+    margin-top: 4.67rem;
+    align-self: center;
+}
 
 
 
@@ -103,47 +105,84 @@ nav ul{
 
 
 
-
-.addpal {
-    position: fixed;
-    top: 30%;
-    left: 40%;
+.palinfo {
+    background-color: #5bc0ff;  
+    width: 900px;
+    height: 500px;
     border-radius: 20px;
-    background-color: #6DB5FF;
+    margin: 50px auto;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 1rem;
+    justify-content: space-between;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-#addpal {
-    width: 340px;
-    height: 346px;
-    background-color: #85C0FD;
-    border-radius: 130px;
 
+#Pubert {
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    border: 5px solid #222;
+}
+
+
+.petinfo {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center; 
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
 }
 
-#plus-sign1 {
-    width: 100px;
-    justify-self: center;
-    align-self: center;
-}
-
-#plus-sign2 {
-    height: 100px;
-    width: 10px;
-}
-
-#plus-sign1, #plus-sign2 {
-    background-color: white;
+.petinfo p {
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    border-radius: 15px;
     padding: 10px;
-    border-radius: 10px;
+    margin: 8px 0;
+    font-weight: bold;
+    width: 180px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
 }
+
+
+.palweight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#weight {
+    background-color: #fff;
+    font-size: 24px;
+    color: #070707;
+    border-radius: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+#weightgraph {
+    width: 240px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 15px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+#addweight {
+    background-color: #ffffff;
+    color: #120b0b;
+    border-radius: 10px;
+    padding: 8px 15px;
+    text-align: center;
+    width: 12   0px;
+}
+
+
 
 footer {
     background-color: #85C0FD;

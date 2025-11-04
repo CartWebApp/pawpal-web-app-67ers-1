@@ -88,3 +88,189 @@ nav ul{
     border-radius: 10px;
     border: solid 1px black;
 }
+
+#calendarSection {
+    background: white;
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+#monthHeader {
+    text-align: center;
+}
+
+#monthHeader button {
+    padding: 5px 10px;
+    margin: 0 10px;
+}
+
+#weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#weekdays p {
+    margin: 5px 0;
+}
+
+#dayGrid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 3px;
+    margin-top: 8px;
+}
+
+.dayBox {
+    border: 1px solid #bbb;
+    height: 70px;
+    text-align: right;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.dayBox:hover {
+    background-color: #eaf4ff;
+}
+
+.hasEvent {
+    background-color: #ffdddd;
+}
+
+#eventPopup {
+    display: none;
+    position: fixed;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.4);
+}
+
+#popupBox {
+    background: white;
+    width: 300px;
+    margin: 80px auto;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    position: relative;
+}
+
+#closePopup {
+    position: absolute;
+    right: 8px;
+    top: 5px;
+    cursor: pointer;
+}
+
+#eventText {
+    width: 100%;
+    margin: 8px 0;
+    padding: 5px;
+}
+
+#addEvent {
+    padding: 6px 10px;
+    background-color: lightblue;
+    border: 1px solid black;
+    cursor: pointer;
+}
+#monthHeader {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#monthHeader button {
+    background: none;
+    border: none;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+    line-height: 1;
+    color: #333;
+}
+
+#monthHeader button:hover {
+    color: #0077cc;
+}
+@media (max-width: 720px) {
+    header nav {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .logoSide {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .logoSide h1 {
+        font-size: 20px;
+    }
+
+    .navButtons {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .navButtons button {
+        width: 80%;
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+
+    #profilePic {
+        width: 40px;
+        height: 40px;
+        margin-top: 5px;
+    }
+
+    #calendarSection {
+        width: 95%;
+        padding: 10px;
+    }
+
+    #monthHeader h2 {
+        font-size: 18px;
+    }
+
+    #monthHeader button {
+        font-size: 16px;
+        padding: 4px 8px;
+    }
+
+    #weekdays {
+        font-size: 13px;
+    }
+
+    #dayGrid {
+        gap: 2px;
+    }
+
+    .dayBox {
+        height: 55px;
+        font-size: 13px;
+        padding: 4px;
+    }
+
+    #popupBox {
+        width: 85%;
+        padding: 10px;
+    }
+
+    #addEvent {
+        width: 100%;
+        font-size: 14px;
+    }
+}

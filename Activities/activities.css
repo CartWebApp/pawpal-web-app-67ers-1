@@ -88,3 +88,107 @@ nav ul{
     border-radius: 10px;
     border: solid 1px black;
 }
+.dashboard {
+  display: flex;
+  justify-content: center;
+  background-color: #9a9a9a;
+  padding: 40px;
+  border-radius: 12px;
+  width: 90%;
+  margin: 20px auto;
+  gap: 30px;
+}
+
+
+
+.graphBox h3 {
+  margin-bottom: 10px;
+}
+
+.graphImage {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+}
+.sidePanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  gap: 20px;
+}
+
+.foodBox, .apt {
+    background-color: #4f4f4f;
+    color: white;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.foodBox h3, .apt h3 {
+    margin-bottom: 10px;
+}
+
+#foodlist {
+    background-color: #777;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#foodlist p {
+    background-color: #5e5e5e;
+    margin: 6px 0;
+    padding: 6px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+#addfood {
+    margin-top: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+#foodinput {
+    flex: 1;
+    padding: 6px;
+    border-radius: 8px;
+    border: none;
+}
+
+#addfoodbtn {
+    background-color: #85c0fd;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+#addfoodbtn:hover {
+  background-color: #6cb1fa;
+}
+
+@media (max-width: 720px) {
+    .dashboard {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .graphBox, .sidePanel {
+        width: 100%;
+  }
+
+    #foodlist p {
+        font-size: 12px;
+  }
+
+    #foodinput {
+        font-size: 14px;
+  }
+
+    #addfoodbtn {
+        font-size: 14px;
+        width: 100%;
+  }
+}
