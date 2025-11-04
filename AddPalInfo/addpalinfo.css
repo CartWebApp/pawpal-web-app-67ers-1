@@ -6,8 +6,19 @@
 
 
 
-/* nav */
 
+
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
 
 nav ul{
@@ -87,4 +98,20 @@ nav ul{
     align-self: center;
     border-radius: 10px;
     border: solid 1px black;
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #85C0FD;
+    height: 162px;
+    margin-top: auto;
+    width: 100%;
 }

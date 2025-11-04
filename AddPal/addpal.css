@@ -108,10 +108,7 @@ nav ul{
     position: fixed;
     top: 30%;
     left: 40%;
-    
-
-
-
+    border-radius: 20px;
     background-color: #6DB5FF;
     display: flex;
     align-items: center;
