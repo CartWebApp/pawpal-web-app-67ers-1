@@ -90,7 +90,7 @@ body {
   background-color: #a9d2ff;
 }
 
-.savebtn {
+p {
   background-color: #3a95ff;
   color: white;
   border: none;
@@ -101,12 +101,12 @@ body {
   cursor: pointer;
   transition: 0.2s;
 }
-.savebtn a {
+p a {
   color: white;
   text-decoration: none;
 }
 
-.savebtn:hover {
+p:hover {
   background-color: #2d7bdd;
 }
 
