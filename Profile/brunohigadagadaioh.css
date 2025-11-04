@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #85c0fd;
+  background-repeat: repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.profile-card {
+  background-color: #b8dbff;
+  border-radius: 20px;
+  padding: 40px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic-area {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.profile-pic {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 5px solid white;
+  object-fit: cover;
+}
+
+.upload-btn {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background-color: #3a95ff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.profile-card h2 {
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.brunohigadagadaioh-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: stretch;
+}
+
+.brunohigadagadaioh-form label {
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+.brunohigadagadaioh-form input {
+  background-color: #85bfff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 15px;
+  outline: none;
+}
+
+.brunohigadagadaioh-form input:focus {
+  background-color: #a9d2ff;
+}
+
+.savebtn {
+  background-color: #3a95ff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 18px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.savebtn a {
+  color: white;
+  text-decoration: none;
+}
+
+.savebtn:hover {
+  background-color: #2d7bdd;
+}
+
+@media (max-width: 720px) {
+  .profile-card {
+    width: 85%;
+    padding: 25px;
+  }
+
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+  }
+
+  .save-btn {
+    font-size: 16px;
+  }
+}

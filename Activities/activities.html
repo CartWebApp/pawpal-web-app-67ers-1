@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="activities.css">
 </head>
 <body>
     
@@ -16,14 +16,32 @@
         <li id="Profile"> <a href="#"> <img src="/Palmages/bruno.png" id="bruno"> </a> </li>
     </ul>
 </nav>
+<main class="dashboard">
+    <section class="graphBox">
+        <img src="/Palmages/graph.png" alt="Distance Walked Graph" class="graphImage">
+    </section>
 
-<section>
-    <h3>Food Eaten</h3>
-    <p> BBQ Chicken - 2 hrs ago</p>
-    <p> Chicken Pot Pie - 10 hrs ago</p>
-    <p> Crumbl Cookies - Yesterday</p>
-</section>
+    <section class="sidePanel">
+        <div class="foodBox">
+        <h3>Food eaten</h3>
+            <div id="foodlist">
+                <p>BBQ CHICKEN 2 hrs ago</p>
+                <p>Chicken Pop Pie 10 hrs ago</p>
+                <p>Crumbl Cookies yesterday</p>
+            </div>
+            <div id="addfood">
+                <input type="text" id="foodinput" placeholder="Add food item...">
+                <button id="addfoodbtn">Add</button>
+            </div>
+        </div>
 
-<section>
-    <h3> Upcoming Appointments</h3>
-</section>
+        <div class="apt">
+            <h3>Upcoming Appointments</h3>
+        </div>
+    </section>
+</main>
+
+<script src="activities.js"></script>
+
+</body>
+</html>
